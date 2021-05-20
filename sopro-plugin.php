@@ -3,18 +3,17 @@
 /**
  * @link              sopro.io
  * @since             1.0.0
- * @package           Sopro_Plugin
+ * @package           Sopro
  *
  * @wordpress-plugin
- * Plugin Name:       Sopro plugin
+ * Plugin Name:       Sopro
  * Plugin URI:        sopro.io
  * Description:       Installs the required code for tracking Sopro campaigns.
  * Version:           1.0.0
- * Author:            Vladimir Cvetkoski
- * Author URI:        sopro.io
+ * Author:            Sopro
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       sopro-plugin
+ * Text Domain:       sopro
  * Domain Path:       /languages
  */
 

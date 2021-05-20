@@ -72,7 +72,7 @@ class Sopro_Plugin {
 		} else {
 			$this->version = '1.0.0';
 		}
-		$this->plugin_name = 'sopro-plugin';
+		$this->plugin_name = 'sopro';
 
 		$this->load_dependencies();
 		$this->set_locale();

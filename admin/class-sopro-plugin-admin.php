@@ -109,10 +109,10 @@ class Sopro_Plugin_Admin {
 		
 		add_submenu_page(
 			'options-general.php',                   // parent slug
-			__( 'Sopro Plugin', 'sopro-plugin' ),      // page title
-			__( 'Sopro Plugin', 'sopro-plugin' ),      // menu title
+			__( 'Sopro Plugin', 'sopro' ),      // page title
+			__( 'Sopro Plugin', 'sopro' ),      // menu title
 			'manage_options',                        // capability
-			'sopro-plugin',                           // menu_slug
+			'sopro',                           // menu_slug
 			array( $this, 'display_settings_page' )  // callable function
 		);
 	}
@@ -146,20 +146,20 @@ class Sopro_Plugin_Admin {
 		// Here we are going to add a section for our setting.
 		add_settings_section(
 			$this->plugin_name . '-settings-section',
-			__( 'Sopro Plugin settings', 'sopro-plugin' ),
+			__( 'Sopro Plugin settings', 'sopro' ),
 			array( $this, 'sandbox_add_settings_section' ),
 			$this->plugin_name . '-settings'
 		);
 
 		add_settings_field(
 			'sopro-tracking',
-			__( 'Enter your Sopro Plugin ID', 'sopro-plugin' ),
+			__( 'Enter your Sopro tracking ID', 'sopro' ),
 			array( $this, 'sandbox_add_settings_field_input_text' ),
 			$this->plugin_name . '-settings',
 			$this->plugin_name . '-settings-section',
 			array(
 				'label_for' => 'sopro-tracking',
-				'default'   => __( 'YOUR ID HERE', 'sopro-plugin' )
+				'default'   => __( 'YOUR ID HERE', 'sopro' )
 			)
 		);
 
@@ -210,7 +210,7 @@ class Sopro_Plugin_Admin {
 
 	public function add_plugin_options_link($links) {
 
-			$options_link = '<a href="' . admin_url( 'options-general.php?page=sopro-plugin' ) . '">' . __('Settings') . '</a>';
+			$options_link = '<a href="' . admin_url( 'options-general.php?page=sopro' ) . '">' . __('Settings') . '</a>';
 			array_unshift($links, $options_link);
 			return $links;
 	

@@ -15,12 +15,12 @@
 
 <div id="wrap">
 	<div class="sopro-tracking">
-		<img src="https://sopro.io/wp-content/themes/sopro/img/logo_symbol_header.svg" />
+		<img src="<?php echo plugin_dir_url( __DIR__ ) . 'assets/sopro_symbol_header.svg'; ?>" />
 	</div>
 	<form method="post" action="options.php">
 		<?php
-			settings_fields( 'sopro-plugin-settings' );
-			do_settings_sections( 'sopro-plugin-settings' );
+			settings_fields( 'sopro-settings' );
+			do_settings_sections( 'sopro-settings' );
 			submit_button();
 		?>
 	</form>
